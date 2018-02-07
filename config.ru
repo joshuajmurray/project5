@@ -7,4 +7,5 @@ run lambda { |env|
 		[200, {'Content-Type'=>'text/plain'}, ['This should be tvshow_random']]
 	else
 		[200, {'Content-Type'=>'text/plain'}, ['Hello']]
+	end
 }
