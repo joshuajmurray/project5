@@ -1,5 +1,5 @@
 run lambda { |env|
-	req = RACK::Request.new(env)
+	req = Rack::Request.new(env)
 	case req.path_info
 	when /tvshow/
 		[200, {'Content-Type'=>'text/plain'}, ['X-Files']]
