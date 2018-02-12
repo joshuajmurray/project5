@@ -2,7 +2,7 @@ require 'httparty'
 
 run lambda { |env|
 	req = Rack::Request.new(env)
-	path = req.path_info
+	path = req.path
 	if '/tvshow'==path
 		[200, {'Content-Type'=>'text/plain'}, ['X-Files']]
 	elsif '/random_tvshow'==path
